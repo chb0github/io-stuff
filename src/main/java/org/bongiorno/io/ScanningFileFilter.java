@@ -34,7 +34,7 @@ public class ScanningFileFilter implements FileFilter {
     public boolean accept(File pathname) {
         final boolean[] accept = {true};
         try {
-            ScanningInputStream input = new ScanningInputStream(predicate, new FoundCosumer(accept), new FileInputStream(pathname));
+            ScanningInputStream input = new ScanningInputStream(predicate, new FoundConsumer(accept), new FileInputStream(pathname));
 
             read(input);
             input.close();
@@ -53,10 +53,10 @@ public class ScanningFileFilter implements FileFilter {
         }
     }
 
-    private static class FoundCosumer implements Consumer<InputStream> {
+    private static class FoundConsumer implements Consumer<InputStream> {
         private final boolean[] accept;
 
-        public FoundCosumer(boolean[] accept) {
+        public FoundConsumer(boolean[] accept) {
             this.accept = accept;
         }
 
