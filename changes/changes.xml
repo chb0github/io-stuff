@@ -5,6 +5,7 @@
         <title>IO Utility classes I have written</title>
     </properties>
     <body>
+        <release version="1.0.3" date="2013-12-16" description="version bump for deployment"/>
         <release version="1.0.0" date="2013-09-17" description="initial check in"/>
     </body>
 </document>
