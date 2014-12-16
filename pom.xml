@@ -4,7 +4,7 @@
 
     <groupId>org.bongiorno.io</groupId>
     <artifactId>io-stuff</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
 
     <name>IO-stuff</name>
